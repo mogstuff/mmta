@@ -1,0 +1,14 @@
+$base-color: #000 !default;
+$font-family: "arial","serif" !default;
+$page-bg-color:linear-gradient(to bottom, rgba(252,255,244,1) 0%,rgba(233,233,206,1) 100%)!default;
+
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+// Custom code goes here..
+
+// Examples of using the icon mixin:
+// @include icon('user');
