@@ -1,6 +1,6 @@
 <?php
 $current_time = urlEncode(subStr(date("c"), 0, 19)."Z"); 
-$url = 'https://www.googleapis.com/calendar/v3/calendars/s85r477unba7a9sk8vnolgpvg8@group.calendar.google.com/events?singleEvents=true&timeMin=' . $current_time . '&maxResults=5&sortorder=descending&fields=items(end,start,status,summary,location)&key=AIzaSyCMfgPMsMiqj26svQKFriQDlY3RCODCti4';
+$url = 'https://www.googleapis.com/calendar/v3/calendars/s85r477unba7a9sk8vnolgpvg8@group.calendar.google.com/events?singleEvents=true&timeMin=' . $current_time . '&maxResults=5&sortorder=descending&fields=items(end,start,status,summary,location)&key={api key here};
 $result = file_get_contents($url);
 $obj = json_decode($result);
 header('Cache-Control: no-cache, must-revalidate');
